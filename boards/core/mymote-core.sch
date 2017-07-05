@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3428,7 +3428,7 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <wire x1="12.7" y1="3.81" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-2.54" x2="12.7" y2="-2.54" width="0.127" layer="21"/>
 </package>
-<package name="RFM69&amp;9X">
+<package name="RFM69HCW-RFM95-MINPADS">
 <wire x1="-10.16" y1="-8.001" x2="5.842" y2="-8.001" width="0.127" layer="21"/>
 <wire x1="5.842" y1="8.001" x2="-10.16" y2="8.001" width="0.127" layer="21"/>
 <smd name="ANT" x="5.7775" y="-7" dx="2" dy="1.27" layer="1"/>
@@ -3442,24 +3442,24 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <smd name="NSS" x="-10.2225" y="-1" dx="2" dy="1.27" layer="1" rot="R180"/>
 <smd name="SCK" x="-10.23" y="1.0122" dx="2" dy="1.27" layer="1"/>
 <smd name="VDD" x="5.7775" y="1" dx="2" dy="1.27" layer="1"/>
-<text x="-1.96" y="-3.382" size="0.8128" layer="25" font="vector" ratio="16" align="center">&gt;VALUE</text>
+<text x="-1.96" y="-3.382" size="0.8128" layer="27" font="vector" ratio="16" align="center">&gt;VALUE</text>
 <wire x1="-10.16" y1="-4.032" x2="-10.16" y2="-6.096" width="0.127" layer="21"/>
 <wire x1="5.842" y1="-4.064" x2="5.842" y2="0" width="0.127" layer="21"/>
 <smd name="DIO1" x="5.7795" y="5" dx="2" dy="1.27" layer="1" rot="R180"/>
 <smd name="RESET" x="-10.2225" y="-3" dx="2" dy="1.27" layer="1" rot="R180"/>
-<text x="-8.763" y="6.985" size="0.8128" layer="21" font="vector" ratio="16" align="center-left">GND</text>
-<text x="-8.763" y="4.953" size="0.8128" layer="21" font="vector" ratio="16" align="center-left">MISO</text>
-<text x="-8.763" y="3.048" size="0.8128" layer="21" font="vector" ratio="16" align="center-left">MOSI</text>
-<text x="-8.763" y="1.016" size="0.8128" layer="21" font="vector" ratio="16" align="center-left">SCK</text>
-<text x="-8.763" y="-1.016" size="0.8128" layer="21" font="vector" ratio="16" align="center-left">NSS</text>
-<text x="-8.763" y="-2.921" size="0.8128" layer="21" font="vector" ratio="16" align="center-left">RESET</text>
-<text x="-8.763" y="-6.985" size="0.8128" layer="21" font="vector" ratio="16" align="center-left">GND</text>
-<text x="4.445" y="-6.985" size="0.8128" layer="21" font="vector" ratio="16" align="center-right">ANT</text>
-<text x="4.445" y="-4.953" size="0.8128" layer="21" font="vector" ratio="16" align="center-right">GND</text>
-<text x="4.445" y="1.016" size="0.8128" layer="21" font="vector" ratio="16" align="center-right">3V3</text>
-<text x="4.445" y="3.048" size="0.8128" layer="21" font="vector" ratio="16" align="center-right">DIO0</text>
-<text x="4.445" y="4.953" size="0.8128" layer="21" font="vector" ratio="16" align="center-right">DIO1</text>
-<text x="4.445" y="6.985" size="0.8128" layer="21" font="vector" ratio="16" align="center-right">DIO2</text>
+<text x="-8.763" y="6.985" size="0.8128" layer="27" font="vector" ratio="16" align="center-left">GND</text>
+<text x="-8.763" y="4.953" size="0.8128" layer="27" font="vector" ratio="16" align="center-left">MISO</text>
+<text x="-8.763" y="3.048" size="0.8128" layer="27" font="vector" ratio="16" align="center-left">MOSI</text>
+<text x="-8.763" y="1.016" size="0.8128" layer="27" font="vector" ratio="16" align="center-left">SCK</text>
+<text x="-8.763" y="-1.016" size="0.8128" layer="27" font="vector" ratio="16" align="center-left">NSS</text>
+<text x="-8.763" y="-2.921" size="0.8128" layer="27" font="vector" ratio="16" align="center-left">RESET</text>
+<text x="-8.763" y="-6.985" size="0.8128" layer="27" font="vector" ratio="16" align="center-left">GND</text>
+<text x="4.445" y="-6.985" size="0.8128" layer="27" font="vector" ratio="16" align="center-right">ANT</text>
+<text x="4.445" y="-4.953" size="0.8128" layer="27" font="vector" ratio="16" align="center-right">GND</text>
+<text x="4.445" y="1.016" size="0.8128" layer="27" font="vector" ratio="16" align="center-right">3V3</text>
+<text x="4.445" y="3.048" size="0.8128" layer="27" font="vector" ratio="16" align="center-right">DIO0</text>
+<text x="4.445" y="4.953" size="0.8128" layer="27" font="vector" ratio="16" align="center-right">DIO1</text>
+<text x="4.445" y="6.985" size="0.8128" layer="27" font="vector" ratio="16" align="center-right">DIO2</text>
 </package>
 <package name="SJ_2S">
 <description>Small solder jumper with big paste layer so it will short during reflow.</description>
@@ -4027,6 +4027,35 @@ TS-003</description>
 <vertex x="2.5654" y="3.937"/>
 </polygon>
 </package>
+<package name="RFM69CW-MINPADS">
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
+<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
+<smd name="3" x="-8.008" y="2" dx="2" dy="1.27" layer="1"/>
+<smd name="2" x="-8.008" y="4" dx="2" dy="1.27" layer="1"/>
+<smd name="1" x="-8.008" y="6" dx="2" dy="1.27" layer="1"/>
+<smd name="4" x="-8.008" y="-2" dx="2" dy="1.27" layer="1"/>
+<smd name="5" x="-8.008" y="-4" dx="2" dy="1.27" layer="1"/>
+<smd name="6" x="-8.008" y="-6" dx="2" dy="1.27" layer="1"/>
+<smd name="7" x="8.008" y="-6" dx="2" dy="1.27" layer="1"/>
+<smd name="8" x="8.008" y="-4" dx="2" dy="1.27" layer="1"/>
+<smd name="9" x="8.008" y="6" dx="2" dy="1.27" layer="1"/>
+<text x="0" y="4.064" size="0.8128" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-8" y1="8" x2="-8" y2="7.054" width="0.127" layer="21"/>
+<wire x1="-8" y1="0.978" x2="-8" y2="-0.946" width="0.127" layer="21"/>
+<wire x1="-8" y1="-7.054" x2="-8" y2="-8" width="0.127" layer="21"/>
+<wire x1="8" y1="-8" x2="8" y2="-7.054" width="0.127" layer="21"/>
+<wire x1="8" y1="-3.074" x2="8" y2="4.946" width="0.127" layer="21"/>
+<wire x1="8" y1="7.054" x2="8" y2="8" width="0.127" layer="21"/>
+<text x="-6.35" y="6.096" size="0.8128" layer="27" font="vector" ratio="15" align="center-left">ANT</text>
+<text x="-6.35" y="4.064" size="0.8128" layer="27" font="vector" ratio="15" align="center-left">3V3</text>
+<text x="-6.35" y="2.032" size="0.8128" layer="27" font="vector" ratio="15" align="center-left">GND</text>
+<text x="-6.35" y="-2.032" size="0.8128" layer="27" font="vector" ratio="15" align="center-left">MOSI</text>
+<text x="-6.35" y="-4.064" size="0.8128" layer="27" font="vector" ratio="15" align="center-left">SCK</text>
+<text x="-6.35" y="-6.096" size="0.8128" layer="27" font="vector" ratio="15" align="center-left">NSS</text>
+<text x="6.604" y="-6.096" size="0.8128" layer="27" font="vector" ratio="15" align="center-right">MISO</text>
+<text x="6.604" y="-4.064" size="0.8128" layer="27" font="vector" ratio="15" align="center-right">DIO0</text>
+<text x="6.604" y="6.096" size="0.8128" layer="27" font="vector" ratio="15" align="center-right">GND</text>
+</package>
 </packages>
 <symbols>
 <symbol name="M13">
@@ -4194,7 +4223,7 @@ TS-003</description>
 <pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="RFM69&amp;9X">
+<symbol name="RFM69HCW-RFM95">
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
@@ -4211,6 +4240,8 @@ TS-003</description>
 <text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">RFM69C &amp; 9X</text>
 <pin name="DIO1" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
 <pin name="RESET" x="-12.7" y="-10.16" visible="pin" length="short" direction="in"/>
+<pin name="GND1" x="-2.54" y="-15.24" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="GND2" x="2.54" y="-15.24" visible="pad" length="short" direction="pwr" rot="R90"/>
 </symbol>
 <symbol name="SJ">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
@@ -4288,6 +4319,23 @@ TS-003</description>
 <vertex x="-1.016" y="0.762"/>
 <vertex x="-1.016" y="-0.762"/>
 </polygon>
+</symbol>
+<symbol name="RFM69CW-MINPADS">
+<pin name="DIO0" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="3.3V" x="-15.24" y="10.16" length="middle" direction="pwr"/>
+<pin name="GND@1" x="15.24" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="ANT" x="15.24" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="GND@2" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="SCK" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="MISO" x="-15.24" y="5.08" length="middle"/>
+<pin name="MOSI" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="NSS" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="13.97" size="1.778" layer="95" ratio="12">&gt;NAME</text>
+<text x="-10.16" y="-15.875" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5918,18 +5966,20 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="RFM69C&amp;9X">
+<deviceset name="RFM69HCW-RFM95">
 <gates>
-<gate name="G$1" symbol="RFM69&amp;9X" x="0" y="2.54"/>
+<gate name="G$1" symbol="RFM69HCW-RFM95" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="RFM69&amp;9X">
+<device name="" package="RFM69HCW-RFM95-MINPADS">
 <connects>
 <connect gate="G$1" pin="ANT" pad="ANT"/>
 <connect gate="G$1" pin="DIO0" pad="DIO0"/>
 <connect gate="G$1" pin="DIO1" pad="DIO1"/>
 <connect gate="G$1" pin="DIO2" pad="DIO2"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
 <connect gate="G$1" pin="MOSI" pad="MOSI"/>
 <connect gate="G$1" pin="RESET" pad="RESET"/>
@@ -6438,6 +6488,29 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFM69CW-MINPADS">
+<gates>
+<gate name="G$1" symbol="RFM69CW-MINPADS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFM69CW-MINPADS">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="2"/>
+<connect gate="G$1" pin="ANT" pad="1"/>
+<connect gate="G$1" pin="DIO0" pad="8"/>
+<connect gate="G$1" pin="GND@1" pad="3"/>
+<connect gate="G$1" pin="GND@2" pad="9"/>
+<connect gate="G$1" pin="MISO" pad="7"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="NSS" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6973,7 +7046,7 @@ http://www.ladyada.net/library/pcb/eaglelibrary.html</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
  Please keep in mind, that these devices are necessary for the
@@ -7044,7 +7117,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROJECT_AUTHOR" value="TINKERMAN &lt;xose.perez@gmail.com&gt;"/>
 <attribute name="PROJECT_LICENSE" value="CC-SA-BY 3.0"/>
 <attribute name="PROJECT_NAME" value="MYMOTE - CORE"/>
-<attribute name="PROJECT_VERSION" value="0.2.20170604"/>
+<attribute name="PROJECT_VERSION" value="0.2.20170617"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -7074,38 +7147,40 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R2" library="xose" deviceset="RESISTOR" device="0805" value="2K"/>
 <part name="R1" library="xose" deviceset="RESISTOR" device="0805" value="470"/>
 <part name="L1" library="xose" deviceset="LED" device="_0805"/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X2" library="adafruit" deviceset="ANTENNA_U.FL" device=""/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L2" library="xose" deviceset="LED" device="_0805"/>
 <part name="R4" library="xose" deviceset="RESISTOR" device="0805" value="1K5"/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="xose" deviceset="C-EU" device="0805" value="100nF"/>
 <part name="R3" library="xose" deviceset="RESISTOR" device="0805" value="10K"/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$2" library="xose" deviceset="M06" device=""/>
 <part name="C9" library="xose" deviceset="C-EU" device="0805" value="1uF"/>
 <part name="JP1" library="xose" deviceset="M03" device="PTH"/>
-<part name="U$3" library="xose" deviceset="RFM69C&amp;9X" device=""/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="U$3" library="xose" deviceset="RFM69HCW-RFM95" device=""/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="xose" deviceset="RESISTOR" device="0805" value="470K"/>
 <part name="R6" library="xose" deviceset="RESISTOR" device="0805" value="470K"/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="adafruit" deviceset="XTAL-4" device="-3225"/>
 <part name="C7" library="xose" deviceset="C-EU" device="0805" value="22pF"/>
 <part name="C8" library="xose" deviceset="C-EU" device="0805" value="22pF"/>
 <part name="SJ2" library="xose" deviceset="SOLDERJUMPER" device="NO" value="SOLDERJUMPERNO"/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP2" library="xose" deviceset="M04" device="PTH"/>
-<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q1" library="xose" deviceset="MOSFET-P" device="WIDE"/>
 <part name="D1" library="xose" deviceset="DIODE" device="-SMD" value="1N5819"/>
 <part name="R7" library="xose" deviceset="RESISTOR" device="0805" value="2K"/>
 <part name="SJ1" library="xose" deviceset="SOLDERJUMPER" device="TRACE-PTH" value="SWITCH"/>
 <part name="C10" library="xose" deviceset="C-EU" device="0805" value="100nF"/>
+<part name="U$4" library="xose" deviceset="RFM69CW-MINPADS" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7154,7 +7229,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$2" gate="G$1" x="175.26" y="88.9"/>
 <instance part="C9" gate="G$1" x="198.12" y="96.52" rot="MR270"/>
 <instance part="JP1" gate="G$1" x="224.79" y="91.44"/>
-<instance part="U$3" gate="G$1" x="72.39" y="30.48"/>
+<instance part="U$3" gate="G$1" x="39.37" y="27.94"/>
 <instance part="GND6" gate="1" x="135.89" y="8.89"/>
 <instance part="R5" gate="G$1" x="177.8" y="59.69" rot="R90"/>
 <instance part="R6" gate="G$1" x="177.8" y="46.99" rot="R90"/>
@@ -7163,7 +7238,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C7" gate="G$1" x="175.26" y="143.51" rot="MR0"/>
 <instance part="C8" gate="G$1" x="185.42" y="143.51" rot="MR0"/>
 <instance part="SJ2" gate="1" x="143.51" y="31.75" rot="R90"/>
-<instance part="GND8" gate="1" x="72.39" y="10.16"/>
+<instance part="GND8" gate="1" x="39.37" y="5.08"/>
 <instance part="GND9" gate="1" x="123.19" y="77.47"/>
 <instance part="GND10" gate="1" x="151.13" y="78.74"/>
 <instance part="JP2" gate="G$1" x="81.28" y="81.28"/>
@@ -7173,6 +7248,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R7" gate="G$1" x="76.2" y="158.75" rot="R270"/>
 <instance part="SJ1" gate="1" x="100.33" y="151.13"/>
 <instance part="C10" gate="G$1" x="205.74" y="91.44"/>
+<instance part="U$4" gate="G$1" x="93.98" y="27.94"/>
+<instance part="GND2" gate="1" x="120.65" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -7287,7 +7364,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="U$3" gate="G$1" pin="GND"/>
-<wire x1="72.39" y1="12.7" x2="72.39" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="39.37" y1="7.62" x2="39.37" y2="8.89" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND1"/>
+<wire x1="39.37" y1="8.89" x2="39.37" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="12.7" x2="36.83" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="8.89" x2="39.37" y2="8.89" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND2"/>
+<wire x1="41.91" y1="12.7" x2="41.91" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="41.91" y1="8.89" x2="39.37" y2="8.89" width="0.1524" layer="91"/>
+<junction x="39.37" y="8.89"/>
 </segment>
 <segment>
 <pinref part="BATT" gate="G$1" pin="1"/>
@@ -7311,6 +7396,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="93.98" y1="81.28" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND@2"/>
+<wire x1="109.22" y1="22.86" x2="120.65" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="GND@1"/>
+<wire x1="109.22" y1="17.78" x2="120.65" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="120.65" y1="17.78" x2="120.65" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="120.65" y1="22.86" x2="120.65" y2="17.78" width="0.1524" layer="91"/>
+<junction x="120.65" y="17.78"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<junction x="120.65" y="10.16"/>
+</segment>
 </net>
 <net name="D10_SS" class="0">
 <segment>
@@ -7325,8 +7421,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SEL"/>
-<wire x1="59.69" y1="35.56" x2="46.99" y2="35.56" width="0.1524" layer="91"/>
-<label x="46.99" y="35.56" size="1.778" layer="95"/>
+<wire x1="26.67" y1="33.02" x2="13.97" y2="33.02" width="0.1524" layer="91"/>
+<label x="13.97" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="NSS"/>
+<wire x1="78.74" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
+<label x="71.12" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -7386,8 +7487,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="RESET"/>
-<wire x1="59.69" y1="20.32" x2="46.99" y2="20.32" width="0.1524" layer="91"/>
-<label x="46.99" y="20.32" size="1.778" layer="95"/>
+<wire x1="26.67" y1="17.78" x2="13.97" y2="17.78" width="0.1524" layer="91"/>
+<label x="13.97" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -7456,8 +7557,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="DIO1"/>
-<wire x1="85.09" y1="22.86" x2="93.98" y2="22.86" width="0.1524" layer="91"/>
-<label x="88.9" y="22.86" size="1.778" layer="95"/>
+<wire x1="52.07" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
+<label x="55.88" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D0_RX" class="0">
@@ -7478,8 +7579,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="DIO2"/>
-<wire x1="85.09" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
-<label x="88.9" y="20.32" size="1.778" layer="95"/>
+<wire x1="52.07" y1="17.78" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
+<label x="55.88" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A7" class="0">
@@ -7587,8 +7688,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="DIO0"/>
-<wire x1="85.09" y1="25.4" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
-<label x="88.9" y="25.4" size="1.778" layer="95"/>
+<wire x1="52.07" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
+<label x="55.88" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="DIO0"/>
+<wire x1="109.22" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<label x="109.22" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11_MOSI" class="0">
@@ -7609,8 +7715,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="MOSI"/>
-<wire x1="59.69" y1="27.94" x2="46.99" y2="27.94" width="0.1524" layer="91"/>
-<label x="46.99" y="27.94" size="1.778" layer="95"/>
+<wire x1="26.67" y1="25.4" x2="13.97" y2="25.4" width="0.1524" layer="91"/>
+<label x="13.97" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="MOSI"/>
+<wire x1="78.74" y1="30.48" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
+<label x="71.12" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D12_MISO" class="0">
@@ -7631,8 +7742,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="MISO"/>
-<wire x1="59.69" y1="30.48" x2="46.99" y2="30.48" width="0.1524" layer="91"/>
-<label x="46.99" y="30.48" size="1.778" layer="95"/>
+<wire x1="26.67" y1="27.94" x2="13.97" y2="27.94" width="0.1524" layer="91"/>
+<label x="13.97" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="MISO"/>
+<wire x1="78.74" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<label x="71.12" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D13_SCK" class="0">
@@ -7653,8 +7769,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SCK"/>
-<wire x1="59.69" y1="33.02" x2="46.99" y2="33.02" width="0.1524" layer="91"/>
-<label x="46.99" y="33.02" size="1.778" layer="95"/>
+<wire x1="26.67" y1="30.48" x2="13.97" y2="30.48" width="0.1524" layer="91"/>
+<label x="13.97" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="SCK"/>
+<wire x1="78.74" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<label x="71.12" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A5_SCL" class="0">
@@ -7737,8 +7858,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
-<wire x1="72.39" y1="43.18" x2="72.39" y2="48.26" width="0.1524" layer="91"/>
-<label x="72.39" y="48.26" size="1.778" layer="95"/>
+<wire x1="39.37" y1="40.64" x2="39.37" y2="45.72" width="0.1524" layer="91"/>
+<label x="39.37" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="3.3V"/>
+<wire x1="78.74" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<label x="71.12" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -7840,8 +7966,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="ANT"/>
-<wire x1="85.09" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
-<label x="88.9" y="35.56" size="1.778" layer="95"/>
+<wire x1="52.07" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
+<label x="55.88" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="ANT"/>
+<wire x1="109.22" y1="20.32" x2="116.84" y2="20.32" width="0.1524" layer="91"/>
+<label x="109.22" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -7943,4 +8074,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, Eagle supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+</compatibility>
 </eagle>
