@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mil"/>
@@ -230,7 +231,7 @@
 <text x="16.51" y="2.54" size="0.762" layer="26" font="vector" ratio="18" rot="MR0" align="bottom-center">7</text>
 <text x="11.049" y="17.526" size="0.8128" layer="25" font="vector" ratio="15" rot="R180" align="center">Tinkerman 2017
 MYMOTE LOGGER
-v0.1.20170507</text>
+v0.2.20171019</text>
 <rectangle x1="4.4752" y1="14.9293" x2="4.526" y2="14.9547" layer="25" rot="R180"/>
 <rectangle x1="1.3764" y1="14.9293" x2="1.4272" y2="14.9547" layer="25" rot="R180"/>
 <rectangle x1="4.4244" y1="14.9547" x2="4.5514" y2="14.9801" layer="25" rot="R180"/>
@@ -1030,8 +1031,8 @@ design rules under a new name.</description>
 <attribute name="MPN" value="DS1337S+" x="-22.733" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1379748" x="-22.733" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="08J6237" x="-22.733" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="SUPPLIER" value="Maxim" x="-22.733" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="PACKAGE" value="SOIC-8" x="-22.733" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="Maxim" x="-22.733" y="6.35" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D1" library="xose" package="0805_DIODE" value="DIODE-SMD" x="6.985" y="13.462"/>
 <element name="Q2" library="semicon-smd-ipc" package="SOT23" value="" x="11.303" y="12.065"/>
@@ -1252,12 +1253,20 @@ design rules under a new name.</description>
 </signal>
 <signal name="VRTC">
 <contactref element="IC5" pad="8"/>
-<contactref element="D1" pad="C"/>
 <contactref element="Q2" pad="3"/>
 <wire x1="11.303" y1="8.4328" x2="11.4808" y2="8.255" width="0.1524" layer="1"/>
 <wire x1="11.303" y1="13.165" x2="11.303" y2="8.4328" width="0.1524" layer="1"/>
+<wire x1="11.006" y1="13.462" x2="11.303" y2="13.165" width="0.1524" layer="1"/>
+<contactref element="D1" pad="C"/>
+<contactref element="R1" pad="1"/>
 <wire x1="7.885" y1="13.462" x2="11.006" y2="13.462" width="0.1524" layer="1"/>
 <wire x1="11.006" y1="13.462" x2="11.303" y2="13.165" width="0.1524" layer="1"/>
+<wire x1="6.085" y1="10.922" x2="6.085" y2="11.927" width="0.1524" layer="1"/>
+<wire x1="6.085" y1="11.927" x2="6.35" y2="12.192" width="0.1524" layer="1"/>
+<wire x1="6.35" y1="12.192" x2="7.62" y2="12.192" width="0.1524" layer="1"/>
+<wire x1="7.62" y1="12.192" x2="7.874" y2="12.446" width="0.1524" layer="1"/>
+<wire x1="7.874" y1="12.446" x2="7.874" y2="13.451" width="0.1524" layer="1"/>
+<wire x1="7.874" y1="13.451" x2="7.885" y2="13.462" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="R1" pad="2"/>
@@ -1273,12 +1282,11 @@ design rules under a new name.</description>
 <via x="14.824" y="11.43" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="VBAT">
-<contactref element="D1" pad="A"/>
-<contactref element="R1" pad="1"/>
 <contactref element="ANALOGSIDE" pad="12"/>
-<wire x1="6.085" y1="10.922" x2="6.085" y2="13.462" width="0.1524" layer="1"/>
-<wire x1="6.085" y1="13.462" x2="3.937" y2="15.61" width="0.1524" layer="1"/>
-<wire x1="3.937" y1="15.61" x2="3.937" y2="21.717" width="0.1524" layer="1"/>
+<contactref element="D1" pad="A"/>
+<wire x1="3.937" y1="13.716" x2="4.191" y2="13.462" width="0.1524" layer="1"/>
+<wire x1="4.191" y1="13.462" x2="6.085" y2="13.462" width="0.1524" layer="1"/>
+<wire x1="3.937" y1="21.717" x2="3.937" y2="13.716" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="IC5" pad="3"/>

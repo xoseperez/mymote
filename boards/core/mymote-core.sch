@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7117,7 +7118,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROJECT_AUTHOR" value="TINKERMAN &lt;xose.perez@gmail.com&gt;"/>
 <attribute name="PROJECT_LICENSE" value="CC-SA-BY 3.0"/>
 <attribute name="PROJECT_NAME" value="MYMOTE - CORE"/>
-<attribute name="PROJECT_VERSION" value="0.2.20170617"/>
+<attribute name="PROJECT_VERSION" value="0.3.20180204"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -7441,6 +7442,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="168.91" x2="181.61" y2="168.91" width="0.1524" layer="91"/>
 <label x="182.88" y="168.91" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="96.52" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
+<label x="208.28" y="96.52" size="1.778" layer="95"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="96.52" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="96.52" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
+<junction x="205.74" y="96.52"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -8058,17 +8068,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="91.44" y1="151.13" x2="95.25" y2="151.13" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="96.52" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
-<label x="208.28" y="96.52" size="1.778" layer="95"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="96.52" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="96.52" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
-<junction x="205.74" y="96.52"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
@@ -8076,7 +8075,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </drawing>
 <compatibility>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
